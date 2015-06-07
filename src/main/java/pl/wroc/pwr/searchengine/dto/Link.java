@@ -15,6 +15,7 @@ public class Link {
 	private int votes;
 	private Date date;
 	private String[] related;
+	private boolean isUseful;
 	
 	public String getTitle() {
 		return title;
@@ -85,6 +86,12 @@ public class Link {
 	@Override
 	public String toString() {
 		return "url=" + url + " ";
+	}
+	public boolean isUseful() {
+		return isUseful;
+	}
+	public void setUseful(boolean isUseful) {
+		this.isUseful = isUseful;
 	}
 	
 	
